@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 # Install dependencies
 RUN apt-get update \
@@ -10,8 +10,8 @@ RUN apt-get update \
 WORKDIR /opt
 
 # Define URLs for Flamenco and Blender downloads
-ENV FLAMENCO_URL=https://flamenco.blender.org/downloads/flamenco-3.2-linux-amd64.tar.gz
-ENV BLENDER_URL=https://mirrors.ocf.berkeley.edu/blender/release/Blender3.3/blender-3.3.6-linux-x64.tar.xz
+ENV FLAMENCO_URL=https://flamenco.blender.org/downloads/flamenco-3.6-linux-amd64.tar.gz
+ENV BLENDER_URL=https://mirrors.ocf.berkeley.edu/blender/release/Blender4.4/blender-4.4.0-linux-x64.tar.xz
 
 # Download and install Flamenco Manager
 RUN curl -L ${FLAMENCO_URL} -o flamenco.tar.gz \
