@@ -1,5 +1,3 @@
-version: "3.7"
-
 services:
   manager:
     # build the image from the Dockerfile in the current directory
